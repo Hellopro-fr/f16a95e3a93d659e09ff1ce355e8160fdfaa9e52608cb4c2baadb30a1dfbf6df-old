@@ -12,7 +12,7 @@ async def main():
     # NGROK_TOKEN = userdata.get('NGROK_TOKEN')
     #if not NGROK_TOKEN:
     #    raise ValueError("La variable d'environnement NGROK_AUTH_TOKEN n'est pas définie.")
-    conf.get_default().auth_token = NGROK_TOKEN
+    conf.get_default().auth_token = userdata.get('NGROK_TOKEN')
 
     # --- Lancement du serveur Uvicorn en arrière-plan ---
     config = uvicorn.Config(app, host="0.0.0.0", port=8502, log_level="info")
