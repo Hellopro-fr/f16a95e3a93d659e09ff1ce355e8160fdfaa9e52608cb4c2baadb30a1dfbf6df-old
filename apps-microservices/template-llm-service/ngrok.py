@@ -9,7 +9,7 @@ async def main():
     Fonction principale asynchrone qui orchestre le lancement du serveur et du tunnel.
     """
     # --- Configuration de Ngrok ---
-    NGROK_TOKEN = os.environ.get("NGROK_AUTH_TOKEN")
+    NGROK_TOKEN = os.environ.get("NGROK_TOKEN")
     if not NGROK_TOKEN:
         raise ValueError("La variable d'environnement NGROK_AUTH_TOKEN n'est pas définie.")
     conf.get_default().auth_token = NGROK_TOKEN
