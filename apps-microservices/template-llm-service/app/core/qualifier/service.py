@@ -7,8 +7,7 @@ from bs4 import BeautifulSoup # <-- Importez BeautifulSoup
 class QualifierService:
     def __init__(self):
         self.llm_args = {
-            "model": "TheBloke/deepseek-llm-7b-chat-AWQ",
-            "quantization": "awq",
+            "model": "TQwen/Qwen-3.14B",
             "gpu_memory_utilization": 0.90,
             "trust_remote_code": True,
             "dtype": "auto"
