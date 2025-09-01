@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup # <-- Importez BeautifulSoup
 class QualifierService:
     def __init__(self):
         self.llm_args = {
-            "model": "Qwen/Qwen2.5-14B-Instruct", 
+            "model": "Qwen/Qwen-14B-Chat-Int4", 
             "quantization": "awq",              
             "gpu_memory_utilization": 0.90,
             "trust_remote_code": True,
